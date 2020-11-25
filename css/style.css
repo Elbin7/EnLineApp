@@ -1,10 +1,11 @@
 
 /********    colores clases   ************/
 :root {
-   --dark: #0a0a0a;
-   --dark-x: #171717;
-   --dark-xx: #222222;
+   --dark: #0b0b0e;
+   --dark-x: #1a1a1d;
+   --dark-xx: #292b30;
    --Gray: #71707a;
+   --Gray-x:#f0f6fb;
    --light: #fff;
    --light-x: #f5f5f5;
    --muted: #a1b0bf;
@@ -83,7 +84,12 @@ body {
 .FontsSize-23 { font-size: 23px !important;}
 
 .LetterSpacing {letter-spacing: normal;}
+.L-S-05 {letter-spacing: 0.5px;}
+.L-S-n05 {letter-spacing: -0.5px;}
 .L-S-n1 {letter-spacing: -1px;}
+
+.L-H-N {line-height: normal;}
+.L-H-05 {line-height: 0.5px;}
 .L-H-1 {line-height: 1px;}
 
 /**************** Flotantes ****************/
@@ -115,9 +121,12 @@ body {
 .Color_Gray { color: var(--Gray)!important;}
 .Color_Dark { color: var(--dark)!important;}
 
+.BK_Color_Light { background-color: var(--light)!important;}
+.BK_Color_Light-x { background-color: var(--light-x)!important;}
+.BK_Color_Gray-x { background-color: var(--Gray-x)!important;}
+.BK_Color_Muted { background-color: var(--muted)!important;}
 .BK_Color_Dark { background-color: var(--dark)!important;}
 .BK_Color_Dark-X { background-color: var(--dark-x)!important;}
-.BK_Color_Light { background-color: var(--light)!important;}
 .BK_Color_Primary-x { background-color: var(--primary-x)!important;}
 
 
@@ -132,6 +141,7 @@ body {
 .Border-B-Primary {border-bottom: 3px solid var(--primary);}
 
 .BrandImg { width: 117px;}
+.BrandImgFooter { width: 190px;}
 .NavBar { min-height: 5rem; }
 
 .Max-LineClamp-2 { 
@@ -140,6 +150,19 @@ body {
    -webkit-box-orient: vertical;  
    overflow: hidden;
  }
+ .H_Divider {
+    margin: 2.50rem auto 0;
+    background-color: var(--primary);
+    height: 2px;
+    width: 70px;
+ }
+ .V_Divider {
+   margin: 2.50rem auto 0;
+   background-color: var(--primary);
+   height: 50px;
+   width: 1px;
+}
+
 
 
 /* Clase Principal de B4 */
@@ -195,6 +218,7 @@ body {
 
 
 
+/* Sombras */
 .shadow {
    box-shadow: 0 .5rem .5rem 0 rgba(5, 5, 5, 0.5) ; 
 }
@@ -204,14 +228,9 @@ body {
 
 
 
-.BK-Image-s2 {
-   background-image: url('/img/bg-dark-2.svg');
-   min-height: 1000px;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
 
+
+/* Diseño cards */
 .CardGratis {
    position: relative;
    display: -ms-flexbox;
@@ -242,4 +261,15 @@ body {
 }
 .card-footer:last-child {
    border-radius: 0 0 calc(.75rem - 1px) calc(0.75rem - 1px);
+}
+
+
+
+.BK-Image-s2 {
+   background-image: url('/img/BK_Contact.jpg');
+   opacity: 0.97;
+   min-height: 576px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
